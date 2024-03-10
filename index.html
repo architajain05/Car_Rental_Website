@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="icon" type="image/png" sizes="25x25" href="android-chrome-192x192.png">
+    <link rel="manifest" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">    
+</head>
+<body>
+    <header id="header">
+        <a href="" class="logo"><img src="Designer-removebg-preview.png" alt=""></a>
+        
+        <div class="bx bx-menu" id="menu-icon"></div>
+        
+        <ul class="navbar">
+            <li><a href="#home">Home</a></1i>
+            <li><a href="#ride">Ride</a></1i>
+            <li><a href="#services">Services</a></1li>
+            <li><a href="#reviews">About</a></1i>
+            <li><a href="#reviews">Reviews</a></1i>
+        </ul>
+        <div class="header-btn">
+            <a href="signup.html" class="sign-up">Sign-up</a>
+            <a href="signin.html" class="sign-in">Sign-In</a>
+        </div>
+        </header>
+        <!-- Home --> 
+        <section class="home" id="home">
+            <div class="text">
+                <h1  class="typing-heading" ><span>"Explore the World Behind the Wheel! Book Your Perfect Ride Today."</span></h1>
+                <p>"Embark on boundless adventures with us! Find your ideal ride and seize every moment of exploration. Start your journey now!".</p>
+                <div class="app-stores">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp" height="54">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty" height="54">
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="">
+                    <div class="location-box">
+                        <label for="city">Pick Up Location</label>
+                        <div class="autocomplete">
+                            <input type="text" id="city" name="city" placeholder="Enter your pickup location">
+                            <div class="dropdown-content" id="dropdownContent">
+                                <a href="#">Delhi</a>
+                                <a href="#">Mumbai</a>
+                                <a href="#">Pune</a>
+                                <a href="#">Jaipur</a>
+                                <a href="#">Hyderabad</a>
+                                <a href="#">Amritsar</a>
+                                <a href="#">Kolkata</a>
+                                <a href="#">Chennai</a>
+                            </div>
+                        </div>
+
+                        <label for="city">Drop Off Location</label>
+                        <div class="autocomplete">
+                            <input type="text" id="city" name="city" placeholder="Enter your dropoff location">
+                        </div>
+                    <div class="input-box">
+                        <span>PickUp Date</span>
+                        <input type="date" name="" id="">
+                    </div>
+                    <div class="input-box">
+                        <span>Return Date</span>
+                        <input type="date" name="" id="">
+                    </div>
+                    </div>
+                    
+                    <button><a href="search.html" class="btn">Search</a></button>
+                </form>
+            </div>
+        </section>
+
+        <!--Ride-->
+        <section class="ride" id="ride">
+            <div class="heading">
+                <span>How Its Work</span>
+                <h1>Rent With 3 Easy Steps</h1>
+            </div>
+            <div class="ride-container">
+                <div class="box">
+                    <i class="bx bxs-map"></i>
+                    <h2>Choose a Location</h2>
+                    <p>Choose your pickup location Choose carefully to ensure a prompt and convenient ride. Type your address or use the map to pinpoint your spot.</p>
+                </div>
+
+                <div class="box">
+                    <i class="bx bxs-calendar-check"></i>
+                    <h2>Pick-Up Date</h2>
+                    <p>Start planning your adventure by selecting the date you'd like to pick up your rental car Whether it's for a weekend geteway or a month-long road trip,choose the perfect start date to embark on your journey with ease.</p>
+                </div>
+
+                <div class="box">
+                    <i class="bx bxs-calendar-star"></i>
+                    <h2>Book A Car</h2>
+                    <p> Unleash your wanderlust and ignite your sense of adventure with our curated selection of pristine  rides - book now and let the journey begin!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--Service -->
+        <div class="container">
+            <h1>BEST SELLING MODELS</h1>
+            <div class="cards">
+              <!-- Images will be added directly here -->
+            <div class="card"><img height="280" width="399" src="car1-removebg-preview.png" alt="Image 1">
+              <div class="part">
+                <div class="mainpart">
+                  <div class="mainpartheading">
+                    <h1>MAHINDRA  TUV 300</h1>
+                  </div>
+                  <div class="mainpartbutton">
+                    <a href="view1.html">View Details</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+              <div class="card"><img height="280" width="399" src="car2-removebg-preview.png" alt="Image 1">
+                <div class="part">
+                  <div class="mainpart">
+                    <div class="mainpartheading">
+                      <h1>MARUTI   WAGON R</h1>
+                    </div>
+                    <div class="mainpartbutton">
+                      <a href="view2.html">View  Details</a>
+                    </div>
+                </div>
+              </div>
+              </div>
+                                <div class="card"><img height="280" width="399" src="car4-removebg-preview.png" alt="Image 1">
+                                  <div class="part">
+                                    <div class="mainpart">
+                                      <div class="mainpartheading">
+                                        <h1>RENAULT KIGER</h1>
+                                      </div>
+                                      <div class="mainpartbutton">
+                                        <a href="view3.html">View Details</a>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                
+                                <div class="card"><img height="280" width="399" src="car5-removebg-preview.png" alt="Image 1">
+                                  <div class="part">
+                                    <div class="mainpart">
+                                      <div class="mainpartheading">
+                                        <h1>MARUTI ERTIGA</h1>
+                                      </div>
+                                      <div class="mainpartbutton">
+                                        <a href="view4.html">View Details</a>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="card"><img height="280" width="399" src="car6-removebg-preview.png" alt="Image 1">
+                                  <div class="part">
+                                    <div class="mainpart">
+                                      <div class="mainpartheading">
+                                        <h1>HYUNDAI CRETA</h1>
+                                      </div>
+                                      <div class="mainpartbutton">
+                                        <a href="view5.html">View Details</a>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="card"><img height="280" width="399" src="car7-removebg-preview.png" alt="Image 1">
+                                  <div class="part">
+                                    <div class="mainpart">
+                                      <div class="mainpartheading">
+                                        <h1>TATA ALTROZ</h1>
+                                      </div>
+                                      <div class="mainpartbutton">
+                                        <a href="view6.html">View Details</a>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+                                <div class="card"><img height="280" width="399" src="car3-removebg-preview.png" alt="Image 1">
+                                  <div class="part">
+                                    <div class="mainpart">
+                                      <div class="mainpartheading">
+                                        <h1>TATA NEXON</h1>
+                                      </div>
+                                      <div class="mainpartbutton">
+                                        <a href="view7.html">View Details</a>
+                                      </div>
+                                  </div>
+                                </div>
+                                </div>
+            </div>
+        </div>
+          </section>
+
+        <!--About-->
+        <section class="about" id="about">
+            <div class="heading">
+                <span>About Us</span>
+                <h1>Best Experience Services</h1>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="jeep.png" alt="">
+        
+                </div>
+                <div class="about-text">
+                    <span>About us</span>
+                    <p>Welcome to our Car Deal, where adventure meets convenience! We're passionate about providing you with the freedom to explore the world on your terms. With a commitment to exceptional service and a fleet of top-quality vehicles, we strive to make every journey memorable.
+                    <p>Our story began with a simple idea: to redefine the car rental experience by offering reliability, affordability, and personalized service. From family vacations to business trips, we understand the importance of having a reliable mode of transportation that fits your needs.</p>
+                    <p>What sets us apart is our dedication to customer satisfaction. We go above and beyond to ensure that every aspect of your rental experience exceeds your expectations. Our friendly and knowledgeable team is here to assist you every step of the way, from choosing the perfect vehicle to providing helpful tips for your journey.
+                    <p>Whether you're exploring new destinations or rediscovering familiar landscapes, we're here to help you make the most of every mile. With transparent pricing, easy booking, and a commitment to quality, you can trust your Car Deal to be your trusted travel partner.</p>
+                    <p>Join us on the road to adventure and discover why thousands of travelers choose us for their transportation needs. Your journey starts here!</p>
+                    <a href="learnmore.html" class="btn">Learn More</a>
+                </div> 
+            </div>
+        </section>
+
+        <section class="text-light jarallax" aria-label="section" data-jarallax data-jarallax-speed="0.5">
+          <img src="3.jpg" alt="" class="jarallax-img">
+          <div class="container">
+              <div class="row">
+              <div class="col-lg-3">
+                  <h1>Let's Your <br> Adventure  <br>Begin</h1>
+                  <div class="spacer-20"></div>
+              </div>
+              <div class="col-md-3">
+                  <i class="fa fa-trophy de-icon mb20"></i>
+                  <h4>First Class Services</h4>
+                  <p>Where luxury meets exceptional care, creating unforgettable moments and exceeding your every expectation.</p>
+              </div>
+              <div class="col-md-3">
+                  <i class="fa fa-road de-icon mb20"></i>
+                  <h4>24/7 road assistance</h4>
+                  <p>Reliable support when you need it most, keeping you on the move with confidence and peace of mind.</p>
+              </div>
+              <div class="col-md-3">
+                  <i class="fa fa-map-pin de-icon mb20"></i>
+                  <h4>Free Pick-Up & Drop-Off</h4>
+                  <p>Enjoy free pickup and drop-off services, adding an extra layer of ease to your car rental experience.</p>
+              </div>
+          </div>
+          </div>
+      </section>
+
+
+
+<!--Latest From Us section-->
+        <section id="section-news">
+          <div class="container">
+              <div class="row align-items-center">
+                  <div class="col-lg-6 offset-lg-3 text-center">
+                      <span class="subtitle">Latest From Us</h2></span>
+                      <h2>News &amp; Promo</h2>
+                      <p>Breaking news, fresh perspectives, and in-depth coverage - stay ahead with our latest news, insights, and analysis.</p>
+                      <div class="spacer-20"></div>
+                  </div>
+                  
+                  <div class="col-lg-4 mb10">
+                      <div class="bloglist s2 item">
+                          <div class="post-content">
+                              <div class="post-image">
+                                  <div class="date-box">
+                                      <div class="m">10</div>
+                                      <div class="d">MAR</div>
+                                  </div>
+                                  <img alt="" src="pic-blog-1.jpg" class="lazy">
+                              </div>
+                              <div class="post-text">                         
+                                  <h4><a href="news-single.html">Enjoy Best Travel Experience<span></span></a></h4>
+                                  <p>Traveling is an enriching experience that allows us to explore new destinations, immerse ourselves in different cultures, and create lifelong memories.</p>
+                                  <a class="btn1-main" href="#">Read More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                          
+                  <div class="col-lg-4 mb10">
+                      <div class="bloglist s2 item">
+                          <div class="post-content">
+                              <div class="post-image">
+                                  <div class="date-box">
+                                      <div class="m">12</div>
+                                      <div class="d">MAR</div>
+                                  </div>
+                                  <img alt="" src="pic-blog-2.jpg" class="lazy">
+                              </div>
+                              <div class="post-text">                           
+                                  <h4><a href="news-single.html">The Future of Car Rent<span></span></a></h4>
+                                  <p>As technology continues to advance at a rapid pace, the car rental industry is poised for a transformative shift. The future of car rental promises..</p>
+                                  <a class="btn1-main" href="#">Read More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                          
+                  <div class="col-lg-4 mb10">
+                      <div class="bloglist s2 item">
+                          <div class="post-content">
+                              <div class="post-image">
+                                  <div class="date-box">
+                                      <div class="m">14</div>
+                                      <div class="d">MAR</div>
+                                  </div>
+                                  <img alt="" src="pic-blog-3.jpg" class="lazy">
+                              </div>
+                              <div class="post-text">                            
+                                  <h4><a href="news-single.html">Holiday Tips For Backpacker<span></span></a></h4>
+                                  <p>For adventure seekers and budget-conscious travelers, backpacking offers a thrilling and immersive way to explore the world. Whether you're embarking..</p>
+                                  <a class="btn1-main" href="#">Read More</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+        <!--Review-->
+        <section class="reviews" id="reviews">
+            <div class="heading">
+                <span>Reviews</span>
+                <h1>Whats Our Customer Say</h1>
+            </div>
+            <div class="reviews-container">
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="person1.jpg" alt="">
+                    </div>
+                    <h2>John Davidson</h2>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                    <p> "I've rented from many car rental companies in the past, but this one stands out for its exceptional customer service and attention to detail. From the moment I made the reservation to the time I returned the vehicle, everything was handled professionally and efficiently."</p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="person2.jpg" alt="">
+                    </div>
+                    <h2>Sarah Martinez</h2>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div>
+                    <p>"I had an amazing experience renting from this car rental service.The online booking process was straightforward.The car was clean, well-maintained, and drove smoothly throughout my entire trip. I also found the pricing to be competitive compared to other rental companies."</p>
+                </div>
+
+                <div class="box">
+                    <div class="rev-img">
+                        <img src="person3.jpg" alt="">
+                    </div>
+                    <h2>Michael Stevens</h2>
+                    <div class="stars">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                    </div> 
+                    <p>"I recently rented a car for a weekend getaway, and I couldn't have been happier with the service I received. The reservation process was quick and easy, and the staff were friendly and helpful from start to finish. The vehicle was clean, comfortable, and well-maintained, making for a pleasant driving experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Newsletter-->
+        <!--<section style="background-color:var(--second-color);" class="newsletter">
+            <h2>Subscribe To Newsletter</h2>
+            <div class="box">
+                <input type="text" placeholder="Enter Your Email...">
+                <a href="#" class="btn">Subscribe</a>
+            </div>
+        </section>-->
+
+        <!--footer-->
+       <!--<footer style="background: var(--second-color); color: black; padding: 40px 20px; font-family: Arial, sans-serif;">
+            <div style="max-width: 1200px; margin: 0 auto;">
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                    <div style="flex: 1 1 300px; margin-bottom: 20px;">
+                        <h3 style="color: black; font-size: 20px; margin-bottom: 15px;">About Car Deal</h3>
+                        <p style="font-size: 16px;">Car Deal is your premier destination for self-drive car rentals, offering a wide range of vehicles at affordable prices.</p>
+                    </div>
+                    <div style="flex: 1 1 300px; margin-bottom: 20px;">
+                        <h3 style="color: black; font-size: 20px; margin-bottom: 15px;">Contact Information</h3>
+                        <p style="font-size: 16px;">Car Deal Headquarters:</p>
+                        <p style="font-size: 16px;">123 Main Street, City, Country</p>
+                        <p style="font-size: 16px;">Email: <a href="mailto:info@cardeal.com" style="color: black; text-decoration: none;">info@cardeal.com</a></p>
+                        <p style="font-size: 16px;">Contact: <a href="tel:+911234567890" style="color: black; text-decoration: none;">+91 1234567890</a></p>
+                    </div>
+                    <div style="flex: 1 1 300px; margin-bottom: 20px;">
+                        <h3 style="color: black; font-size: 20px; margin-bottom: 15px;">Helpful Links</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><a href="#" style="color: black; text-decoration: none;">Home</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">About</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">Contact</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">FAQs</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">Terms & Conditions</a></li>
+                            <li><a href="#" style="color: black; text-decoration: none;">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="border-top: 1px solid var(--text-color); margin: 20px 0;">
+                <div style="text-align: center; font-size: 14px; color: black;">
+                    &copy; 2023 Car Deal. All rights reserved.
+                </div>
+            </div>
+        </footer>-->
+
+<!--FAQ Section-->
+        <section id="section-faq">
+          <div class="container">
+              <div class="row">
+                  <div class="col text-center">
+                      <span class="subtitle">Do You Have</h2></span>
+                      <h2>Any Questions?</h2>
+                      <div class="spacer-20"></div>
+                  </div>
+              </div>
+              <div class="row g-custom-x">
+                  <div class="col-md-6 wow fadeInUp">
+                      <div class="accordion secondary">
+                          <div class="accordion-section">
+                              <div class="accordion-section-title" data-tab="#accordion-1">
+                                  How do I get started with Car Rental?
+                                  <i class="bx bx-chevron-down"></i>
+                              </div>
+                              <div class="accordion-section-content" id="accordion-1">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                              <div class="accordion-section-title" data-tab="#accordion-2">
+                                  Can I rent a car with a debit card??
+                                  <i class="bx bx-chevron-down"></i>
+                              </div>
+                              <div class="accordion-section-content" id="accordion-2">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                              <div class="accordion-section-title" data-tab="#accordion-3">
+                                  What kind of Car Rental do I need?
+                                  <i class="bx bx-chevron-down"></i>
+                              </div>
+                              <div class="accordion-section-content" id="accordion-3">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-6 wow fadeInUp">
+                      <div class="accordion secondary">
+                          <div class="accordion-section">
+                              <div class="accordion-section-title" data-tab="#accordion-b-4">
+                                  What is a rental car security deposit?
+                                  <i class="bx bx-chevron-down"></i>
+                              </div>
+                              <div class="accordion-section-content" id="accordion-b-4">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                              <div class="accordion-section-title" data-tab="#accordion-b-5">
+                                  Can I cancel or modify my reservation?
+                                  <i class="bx bx-chevron-down"></i>
+                              </div>
+                              <div class="accordion-section-content" id="accordion-b-5">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                              <div class="accordion-section-title" data-tab="#accordion-b-6">
+                                  Is it possible to extend my rental period?
+                                  <i class="bx bx-chevron-down"></i>
+                                 
+
+                              </div>
+                              <div class="accordion-section-content" id="accordion-b-6">
+                                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <!--Contact us-->
+      <section id="section-call-to-action" class="bg-color-2 pt60 pb60 text-light">
+          <div class="container">
+              <div class="container">
+              <div class="row">
+
+                  <div class="col-lg-4 offset-lg-2">
+                      <span class="subtitle text-white">Call us for further information</span>
+                      <h2 class="s2">Car Deal customer care is here to help you anytime.</h2>
+                  </div>
+
+                  <div class="col-lg-4 text-lg-center text-sm-center">
+                      <div class="phone-num-big">
+                        <i class="fa fa-phone"></i>
+                          <span class="pnb-text">
+                              Call Us Now
+                          </span>
+                          <span class="pnb-num">
+                              1200 333 800
+                          </span>
+                      </div>
+                      <a href="#" class="btn-main">Contact Us</a>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </section>
+      
+  </div>
+  <!-- content close -->
+  <a href="#" id="back-to-top"></a>
+
+
+        <footer class="text-light">
+          <div class="container">
+              <div class="row g-custom-x">
+                  <div class="col-lg-3">
+                      <div class="widget">
+                          <h5>About Car Deal</h5>
+                          <p>Where quality meets affordability. We understand the importance of a smooth and enjoyable journey without the burden of excessive costs. That's why we have meticulously crafted our offerings to provide you with top-notch vehicles at minimum expense.</p>
+                      </div>
+                  </div>
+                  
+                  <div class="col-lg-3">
+                      <div class="widget">
+                          <h5>Contact Info</h5>
+                          <address class="s1">
+                              <span><i class="id-color fa fa-map-marker fa-lg"></i>08 W 36th St, New York, NY 10001</span>
+                              <span><i class="id-color fa fa-phone fa-lg"></i>+1 333 9296</span>
+                              <span><i class="id-color fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">contact@example.com</a></span>
+                              <span><i class="id-color fa fa-file-pdf-o fa-lg"></i><a href="#">Download Brochure</a></span>
+                          </address>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                      <h5>Quick Links</h5>
+                      <div class="row">
+                          <div class="col-lg-6">
+                              <div class="widget">
+                                  <ul>
+                                      <li><a href="#">About</a></li>
+                                      <li><a href="#">Blog</a></li>
+                                      <li><a href="#">Careers</a></li>
+                                      <li><a href="#">News</a></li>
+                                      <li><a href="#">Partners</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-3">
+                      <div class="widget">
+                          <h5>Social Network</h5>
+                          <div class="social-icons">
+                            <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                            <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                          </div>
+                      </div>    
+                  </div>
+              </div>
+          </div>
+          <div class="subfooter">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="de-flex">
+                              <div class="de-flex-col">
+                                  <a href="index.html">
+                                      Copyright 2024 - Car Deal by Designesia
+                                  </a>
+                              </div>
+                              <ul class="menu-simple">
+                                  <li><a href="#">Terms &amp; Conditions</a></li>
+                                  <li><a href="#">Privacy Policy</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+        
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/1.11.0/jarallax.min.js"></script>
+        <script src="https://kit.fontawesome.com/7cb2dec2d7.js" crossorigin="anonymous"></script>
+
+        
+      <script src="main.js"></script> 
+</body>
+</html>
