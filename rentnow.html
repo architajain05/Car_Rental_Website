@@ -1,0 +1,296 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <style>
+      * {
+  --text-color-1: #3835ec;
+  --text-color-2: #1b0bac;
+  --text-color-3: #000000;
+  --text-color-4: #ffffff;
+  --bg-color-1: #fff;
+  --bg-color-2: var(--text-color-2);
+  --bg-color-3: #5250ad1e;
+  --button-color-1: #5150ad83;
+}
+
+body {
+  color: var(--text-color-1);
+  font-family: monospace;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+    </style>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+        
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      </head>
+      <body>
+        <div style="max-width: 400px">
+          <h2 style="margin: 16px 0">Car pickup & Drop Location</h2>
+          <div>
+            <h3 style="margin: 8px 0; color: var(--text-color-3)">
+              Pickup Location | Time | Charges
+            </h3>
+            <div
+              style="
+                background-color: var(--bg-color-3);
+                margin: 8px 0;
+                padding: 1rem;
+                border-radius: 4px;
+              "
+            >
+              <p>Hub Location | Time | Free</p>
+            </div>
+            <textarea
+              style="
+                width: 100%;
+                display: block;
+                resize: vertical;
+                border: 2px solid #00000060;
+                border-radius: 4px;
+              "
+            ></textarea>
+          </div>
+          <div>
+            <h3 style="margin: 8px 0; color: var(--text-color-3)">
+              Drop Location | Time | Charges
+            </h3>
+            <div
+              style="
+                background-color: var(--bg-color-3);
+                margin: 8px 0;
+                padding: 1rem;
+                border-radius: 4px;
+              "
+            >
+              <p>Hub Location | Time | Free</p>
+            </div>
+            <textarea
+              style="
+                width: 100%;
+                display: block;
+                resize: vertical;
+                border: 2px solid #00000060;
+                border-radius: 4px;
+              "
+            ></textarea>
+          </div>
+          <div
+            style="
+              color: var(--text-color-2);
+              margin: 8px 0;
+              border-radius: 8px;
+              border: 2px solid #00000010;
+            "
+          >
+            <div
+              style="
+                background-color: var(--bg-color-2);
+                padding: 8px 16px;
+                border-radius: 8px 8px 0 0;
+              "
+            >
+              <h2 style="color: var(--text-color-4)">Booking Summary</h2>
+            </div>
+            <div style="font-weight: 600">
+              <div style="display: flex; margin: 8px">
+                <p>Rental Charges</p>
+                <div style="flex-grow: 1"></div>
+                <p>Rs.8,602</p>
+              </div>
+              <div style="display: flex; margin: 8px">
+                <p>Accessories</p>
+                <div style="flex-grow: 1"></div>
+                <p>Rs.0</p>
+              </div>
+              <div style="display: flex; margin: 8px">
+                <p>Trip Protection Plan</p>
+                <div style="flex-grow: 1"></div>
+                <p>Rs.0</p>
+              </div>
+              <div style="display: flex; margin: 8px">
+                <p>GST</p>
+                <div style="flex-grow: 1"></div>
+                <p>Rs.1333.63</p>
+              </div>
+              <div style="display: flex; margin: 8px">
+                <p>Refundable Deposit</p>
+                <div style="flex-grow: 1"></div>
+                <p>Rs.3,000</p>
+              </div>
+            </div>
+            <div style="border: 2px solid #00000030; margin: 0 8px"></div>
+            <div style="margin: 8px">
+              <div style="margin: 8px 0">
+                <input id="luggage" type="checkbox" style="cursor: pointer" />
+                <label for="luggage" style="cursor: pointer"
+                  >Luggage carrier (Subject to availability)</label
+                >
+              </div>
+              <div style="margin: 8px 0">
+                <input id="trip" type="checkbox" style="cursor: pointer" />
+                <label for="trip" style="cursor: pointer"
+                  >Trip Protection Plan
+                  <span style="font-weight: 600">View Details</span></label
+                >
+              </div>
+              <div
+                style="
+                  background-color: #5250ad1e;
+                  padding: 8px;
+                  border-radius: 4px;
+                "
+              >
+                <div  class="box" style="display: flex; justify-content: space-around">
+                  <div
+                    style="
+                      border: 2px solid #0000006b;
+                      background-color: #0000000e;
+                      width: 30%;
+                      padding: 8px 0 16px 0;
+                      text-align: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <div class="detail">
+                      <img src="rent1.jpg" width="64px" height="64px" />
+                    </div>
+                    <p>Emergency Evacuation and Repatriation</p>
+                    <p style="font-size: small">(upto 5000).</p>
+                  </div>
+                  <div
+                    style="
+                      border: 2px solid #0000006b;
+                      background-color: #0000000e;
+                      width: 30%;
+                      padding: 8px 0 16px 0;
+                      text-align: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <div>
+                      <img src="rent2.jpg" width="64px" height="64px" />
+                    </div>
+                    <p>Personal Accident </p>
+                    <p style="font-size: small">Accidental death+ Permenant Total Disability(upto 5 lacs)</p>
+                  </div>
+                  <div
+                    style="
+                      border: 2px solid #0000006b;
+                      background-color: #0000000e;
+                      width: 30%;
+                      padding: 8px 0 16px 0;
+                      text-align: center;
+                      border-radius: 4px;
+                    "
+                  >
+                    <div>
+                      <img src="rent3.jpg" width="64px" height="64px" />
+                    </div>
+                    <p>Emergeny Medical Expenses for Accidental injury</p>
+                    <p style="font-size: small">(upto 1 lacs)</p>
+                  </div>
+                </div>
+                <div style="display: flex">
+                  <input
+                    id="t&c"
+                    type="checkbox"
+                    style="cursor: pointer; display: block"
+                  />
+                  <label for="t&c" style="cursor: pointer; font-size: small"
+                    >I agree to the
+                    <span style="font-weight: 600">Terms and Conditions</span>
+                    and confirm that my age is above 18 years and less then 70 years
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="margin: 0 16px">
+              <div>
+                <input
+                  style="
+                    width: 100%;
+                    padding: 8px 4px;
+                    display: block;
+                    border: 2px solid #00000060;
+                    border-radius: 4px;
+                  "
+                  placeholder="Promo Code"
+                />
+                <p style="text-align: center; margin: 8px 0">OR</p>
+                <input
+                  style="
+                    width: 100%;
+                    padding: 8px 4px;
+                    display: block;
+                    border: 2px solid #00000060;
+                    border-radius: 4px;
+                  "
+                  placeholder="Membership Number"
+                />
+              </div>
+              <div style="text-align: center">
+                <div
+                  style="
+                    display: flex;
+                    font-weight: 800;
+                    font-size: x-large;
+                    margin: 8px 0;
+                  "
+                >
+                  <p>Total Amount</p>
+                  <div style="flex-grow: 1"></div>
+                  <p>Rs.12,935</p>
+                </div>
+                <button
+                  style="
+                    background-color:#474fa0;
+                    border-radius: 26px;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    font-weight: 800;
+                    padding: 8px 24px;
+                    margin: 8px 0;
+                  "
+                >
+                  Proceed
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </body>
+    
+      <script>
+        $(document).ready(function() {
+          $("#trip").click(function() {
+            if ($(this).is(":checked")) {
+              $(".box").slideDown();
+            } else {
+              $(".box").slideUp();
+            }
+          });
+        });
+      </script>
+      
+      
+    </html>

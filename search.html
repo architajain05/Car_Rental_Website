@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      gradient :linear-gradient(#b07a4e, #9994ef);
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      margin-bottom: 0px;
+      width: 100%;
+    }
+    .container h1{
+        font-weight:400px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:#474fa0;
+        font-weight:bold ;
+    }
+    /* CSS for the Rent Now link */
+a.rent {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#474fa0 /*background color */
+  color: white; /* White text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+a.rent:hover {
+  background-color: #0056b3; 
+}
+
+  .info-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed */
+  align-items: center;
+  margin-top: 10px; /* Adjust margin as needed */
+}
+
+.info {
+  
+  color: #ccc;
+  font-weight: 480;
+  font-size: larger;
+  height: 110px;
+  width: 150px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 20px; /* Adjust margin as needed */
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.rent{
+  margin-top: 10px;
+}
+.details-container {
+    position: relative;
+    display: inline-block;
+    
+}
+.details-container button{
+  height: 50px;
+  margin-bottom: 2px;
+  margin-left: 40px;
+
+}
+
+.view-details-btn {
+    background-color: #474fa0;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    text-align:center;
+    height:200px;
+}
+
+
+.details-table {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.details-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table th, .details-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.details-container:hover .details-table {
+    display: block;
+}
+
+
+    .container P{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight:500;
+        font-size:larger;
+        
+        
+    }
+    .div{
+      display:flex;
+      flex-direction:row;
+    }
+    
+
+    .cart{
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      width: 150%;
+      /* max-width: 600px; */
+      height: 80vh;
+      margin-top: 10px;
+      width: 100%;
+      margin-left: 40px;
+      margin-bottom: 0px;
+    }
+    .rent{
+      background-color:#474fa0;
+      color:white;
+    }
+    .fe{
+        background-color: #f9f9f9;
+        height:50px;
+        
+        width:110px;
+        color:;
+        font-size:large;
+        margin-left:45px;
+        gradiant:linear-gradiant(#b07a4e, #9994ef);
+    }
+    
+    
+    .cart img {
+      width: 42%;
+      height: 65%;
+      margin: auto;
+    }
+    .cart-content {
+      margin-left: 120px;
+      padding: 20px;
+      flex-grow: 1;
+      background-color: #f9f9f9;
+      width: 110px;
+    }
+    h1 p {
+      margin: 0;
+    }
+    .cart-content p{
+      margin-left: 39px;
+    }
+    .cart-content img{
+      width: 3%;
+      height: 3%;
+      margin-right:5px;
+    }
+    .details-table{
+      border:2px solid #474fa0;
+    }
+
+/* CSS for the View Details button */
+button.View-details-btn {
+  padding: 10px 20px; /* Padding for the button */
+  background-color:#474fa0; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* CSS for the View Details button hover effect */
+button.View-details-btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="cart">
+      <img src="1car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MARUTI CIAZ</h1>
+        <p>Economy<br><img width="16" height="16" src="https://img.icons8.com/ios/50/user-manual.png" alt="user-manual"/>Manual<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Diesel<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage<br><img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>5 Seater</p>
+        <div class="div">
+        
+        <button style="color:#474fa0" class="info a">120kms/day<br>₹ 9,058<br>405 Free kms</button>
+        <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹9,875<br>1013 Free kms</button>
+        <button  style="color:#474fa0" class="info a">Unlimited<br>₹12,172<br>Unlimited kms</button>
+        </div>
+        <p>Extra kms will be charged at 13/km</p>
+        <a href="rentnow.html" class="rent">Rent Now</a> 
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+        
+      
+  <div class="container">
+    <div class="cart">
+      <img src="2car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MARUTI BREZZA</h1>
+        <p>Economy<br><img width="16" height="16" src="https://img.icons8.com/ios/50/user-manual.png" alt="user-manual"/>Manual<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Diesel<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage<br><img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>5 Seater</p>
+        <div class="div">
+        
+          <button style="color:#474fa0" class="info a">120kms/day<br>₹ 7,445<br>405 Free kms</button>
+          <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹7,444<br>1013 Free kms</button>
+          <button  style="color:#474fa0" class="info a">Unlimited<br>₹7,322<br>Unlimited kms</button>
+          </div>
+          <p>Extra kms will be charged at 13/km</p>
+          <a href="rentnow.html" class="rent">Rent Now</a> 
+          <div class="details-container">
+            <button class="View-details-btn">View Details</button>
+            <div class="details-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>INCLUSIONS</th>
+                            <th>EXCLUSIONS</th>
+                            <th>FACILITIES</th>
+                            <th>T&C</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Base Fare</td>
+                            <td>Refundable Security Deposit</td>
+                            <td>Trip Insurance</td>
+                            <td>GST</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <div class="container">
+    <div class="cart">
+      <img src="3car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MAHINDRA SCORPIO</h1>
+        <p> Super Economy
+            <br><img width="16" height="16" src="https://img.icons8.com/ios/50/user-manual.png" alt="user-manual"/>Manual<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Deisel,Petrol<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage
+            <br><img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>6 Seater</p>
+            <div class="div">
+        
+              <button style="color:#474fa0" class="info a">120kms/day<br>₹ 10,058<br>405 Free kms</button>
+              <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹10,000<br>1013 Free kms</button>
+              <button  style="color:#474fa0" class="info a">Unlimited<br>₹10,122<br>Unlimited kms</button>
+              </div>
+        <p>Extra kms will be charged at 11/km</p>
+        <a href="rentnow.html" class="rent">Rent Now</a>
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+      
+  <div class="container">
+    <div class="cart">
+      <img src="4car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MARUTI BALENO</h1>
+        <p>Standard
+            <br><img width="50" height="50" src="https://img.icons8.com/ios/50/user-manual.png" alt="user-manual"/>Manual<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Deisel<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage
+            <br><img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>5 Seater</p>
+            <div class="div">
+        
+              <button style="color:#474fa0" class="info a">120kms/day<br>₹ 20,555<br>405 Free kms</button>
+              <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹20,200<br>1013 Free kms</button>
+              <button  style="color:#474fa0" class="info a">Unlimited<br>₹20,000<br>Unlimited kms</button>
+              </div>
+            
+            
+        <p>Extra kms will be charged at 9/km</p>
+        <a href="rentnow.html" class="rent">Rent Now</a>
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cart">
+      <img src="5car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MAHINDRA MARAZZO</h1>
+        <p>Standard
+            <br><img width="16" height="16" src="https://img.icons8.com/ios/50/user-manual.png" alt="user-manual"/>Manual<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Deisel<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/> 2 Baggage <br>
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>6 Seater</p>
+            <div class="div">
+        
+              <button style="color:#474fa0" class="info a">120kms/day<br>₹ 9,555<br>405 Free kms</button>
+              <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹10,000<br>1013 Free kms</button>
+              <button  style="color:#474fa0" class="info a">Unlimited<br>₹10,122<br>Unlimited kms</button>
+              </div>
+        <p>Extra kms will be charged at 15/km</p>
+
+        <a href="rentnow.html" class="rent">Rent Now</a>
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cart">
+      <img src="6car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>MAHINDRA XUV300</h1>
+        <p>Standard
+            <br><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/certificate--v2.png" alt="certificate--v2"/>Automatic<br><img width="64" height="64" src="https://img.icons8.com/laces/64/diesel.png" alt="diesel"/>Deisel<br><img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage
+            <br><img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>5 Seater</p>
+            <div class="div">
+        
+              <button style="color:#474fa0" class="info a">120kms/day<br>₹ 11,444<br>405 Free kms</button>
+              <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹11,222<br>1013 Free kms</button>
+              <button  style="color:#474fa0" class="info a">Unlimited<br>₹11,222<br>Unlimited kms</button>
+              </div>
+        <p>Extra kms will be charged at 17/km</p>
+        <a href="rentnow.html" class="rent">Rent Now</a>
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="cart">
+      <img src="7car-removebg-preview.png" alt="Product Image">
+      <div class="cart-content">
+        <h1>TOYOTA</h1>
+        <p>Super Economy
+            <br><img width="24" height="24" src="https://img.icons8.com/material-outlined/24/certificate--v2.png" alt="certificate--v2">Automatic<br>
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/petrol.png" alt="petrol"/>Petrol<br>
+            <img width="32" height="32" src="https://img.icons8.com/windows/32/luggage.png" alt="luggage"/>2 Baggage<br>
+            <img width="50" height="50" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>6 Seater</p>
+            <div class="div">
+        
+              <button style="color:#474fa0" class="info a">120kms/day<br>₹ 16,555<br>405 Free kms</button>
+              <button  style="background-color:#474fa0" class="info b">300kms/day<br>₹15,200<br>1013 Free kms</button>
+              <button  style="color:#474fa0" class="info a">Unlimited<br>₹16,000<br>Unlimited kms</button>
+              </div>
+            
+        <p>Extra kms will be charged at 14/km</p>
+        <a href="rentnow.html" class="rent">Rent Now</a>
+        <div class="details-container">
+          <button class="View-details-btn">View Details</button>
+          <div class="details-table">
+              <table>
+                  <thead>
+                      <tr>
+                          <th>INCLUSIONS</th>
+                          <th>EXCLUSIONS</th>
+                          <th>FACILITIES</th>
+                          <th>T&C</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Base Fare</td>
+                          <td>Refundable Security Deposit</td>
+                          <td>Trip Insurance</td>
+                          <td>GST</td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      </div>
+      </div>
+    </div>
+  </div>

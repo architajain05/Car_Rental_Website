@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Sign-In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Background color changed to white */
+            background-image: url('https://static.vecteezy.com/system/resources/thumbnails/003/591/541/original/view-from-the-car-on-mountain-road-and-forest-free-video.jpg');
+            color: #000; /* Text color changed to black */
+            width: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            background-color: rgba(255, 255,255,0.8); /* Background color changed to white */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow remains the same */
+        }
+        h2 {
+            text-align: center;
+            color: #000; /* Text color changed to black */
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #777; /* Darker border color */
+            border-radius: 5px;
+            color: #333; /* Text color for input fields */
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50; /* Green button color remains the same */
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+        .social-login {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-login button {
+            background-color: #007bff; /* Blue button color remains the same */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .social-login button:last-child {
+            margin-right: 0;
+        }
+        .forgot-password {
+            text-align: center;
+            margin-top: 10px;
+           
+        .forgot-password a {
+            color: #007bff; /* Link color remains the same */
+            text-decoration: none;
+        }
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Car Rental Login</h2>
+        <form action="#" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+        <div class="social-login">
+            <h3>Sign Up with</h3>
+            <button onclick="signInWithGoogle()">Google</button>
+            <button onclick="signInWithphonenumber()">Phone Number</button>
+        </div>
+        <div class="forgot-password">
+            
+            <a href="forgotpass.html">Forgot Password?</a>
+        </div>
+    </div>
+</body>
+</html>

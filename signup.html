@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR RENTAL SIGNUP</title>
+    <style>
+    
+    body {
+    padding-top:40px;
+    margin-top:60px;
+    font-family: Arial, sans-serif;
+    background-image: url('https://media.istockphoto.com/id/834103504/photo/road-panorama-on-sunny-spring-evening.jpg?s=612x612&w=0&k=20&c=I-1O0he_Wvko-aruAaLy-fuTfXZD7wu_ZzX_-nEMMRg='); /* Replace 'background-image-url.jpg' with the path to your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f2f2f2;
+    font-size: 16px; /* Set your desired font size here */
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: rgba(255, 255,255,0.8);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    body {
+    font-family: Arial, sans-serif;
+    background-image: url('img.png.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    height: 100px; 
+    width: 100%; 
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+        input[type="text"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .cancelbtn {
+            float: left;
+            background-color: #ccc;
+            color: #333;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signupbtn {
+            float: right;
+            background-color: dodgerblue;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .signupbtn:hover,
+        .cancelbtn:hover {
+            opacity: 0.8;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <form class="signupForm" id="signupForm">
+        <div class="container">
+            <h1>CAR RENTAL SIGNUP</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy of our car rental website.</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" class="cancelbtn" id="cancelButton"><a href="signup.html">Cancel</a></button>
+                <button type="submit" class="signupbtn">Sign Up for visiting our car rental website.</button>
+            </div>
+        </div>
+    </form>
+
+
+</body>
+</html>

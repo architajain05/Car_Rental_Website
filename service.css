@@ -1,0 +1,73 @@
+body, html {
+ /* margin: 20px;
+  padding: 70px;*/
+  overflow-x: hidden;
+}
+.cards {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  height: 50%;
+
+}
+.container h1{
+    font-size:35px;
+    font-style:normal;
+
+}
+.mainpartheading{
+  word-spacing: 1vw;
+}
+
+.card {
+  width: 450px;
+  height:400px;
+  background-color: #f0f0f0;
+  margin-right: 20px;
+  flex-shrink: 0;
+  border-radius: 20px;
+}
+.mainpartbutton{
+  font-size: 1.5vw;
+}
+.mainpart{
+  /* padding: 20px; */
+  /* margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.part ul {
+  list-style-type: none;
+  /* padding: 20px; */
+  /* margin: 10px; */
+  display: flex;
+  font-size: 2em;
+  /* justify-content: space-between; */
+}
+
+.part ul li {
+  background-color: #f0f0f0;
+  padding: 0px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.part ul li span{
+    font-weight: lighter;
+}
+.button-container .button{
+    width: 100px;
+    height: 100px;
+    color: black;
+    
+    
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 10)); /* Adjust the width according to your card size */
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff; /* Changed background color to white */
+            color: #000; /* Changed text color to black */
+            background-image: url('forgot.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .password-reset-container {
+            width: 300px;
+            margin: 100px auto;
+            background-color: #f5f5f5; /* Changed container background color to a lighter shade */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #000; /* Changed heading color to black */
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            color: #666; /* Changed paragraph color to a darker gray */
+            margin-bottom: 30px;
+        }
+        input[type="email"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Changed border color to a lighter gray */
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333; /* Changed input text color to dark gray */
+            background-color: #fff; /* Changed input background color to white */
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #007bff; /* Changed button background color to a blue shade */
+            color: #fff;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="password-reset-container">
+        <h2>Forgot Password</h2>
+        <p>Please enter your email address below to reset your password.</p>
+        <form action="password_reset.php" method="post">
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="submit" value="Reset Password">
+        </form>
+    </div>
+</body>
+</html>
